@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+}
+
+nav h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* color: rgb(0, 0, 0); */
+    font-weight: bold;
+}
+
+#search-button {
+    --bg-color: 
+#191f36;
+    --snd-bg-color: 
+#262b40;
+    --text-color: 
+#fff;
+    --mian-color: 
+#59b2f4;
+  }
+
+  #search-button.btn {
+    display: inline-block;
+    /* padding: 0 1rem; */
+    background: var(--mian-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--mian-color);
+    font-size: 1rem;
+    color: var(--bg-color);
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.5s ease;
+  }
+  
+  #search-button.btn:hover {
+    box-shadow: none;
+  }
+  
+  #search-button span {
+    color: var(--text-color);
+  }
+
+#container1{
+    /* border: 2px solid black; */
+    margin-bottom: 70px;
+    margin-top: 10px;
+}
+
+#search-input{
+    border-radius: 5px;
+    /* border: none; */
+}
+
+.card{
+    margin-top: 30px;
+    /* background-color: gray; */
+    /* color: white; */
+}
+
+ul button.nav-link{
+    color: white;
+}
+
+ul button.nav-link:hover{
+    background-color:  blue;
+    border-radius: 10px;
+}
+
+footer{
+    background: gray;
+    padding:20px 10px;
+    /* color: wheat; */
+}
+
+.footer-widget p{
+    color: gainsboro;
+}
+
+footer ul li a{
+    color: gainsboro;
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+    color: white;
+}
