@@ -62,13 +62,17 @@ nav h1{
     /* color: white; */
 }
 
-ul button.nav-link{
+
+
+.nav-items ul li button.nav-link{
+    /* border: none; */
     color: white;
 }
 
-ul button.nav-link:hover{
-    background-color:  blue;
-    border-radius: 10px;
+
+.nav-items ul li button.nav-link:hover{
+    color: wheat;
+    border: none;
 }
 
 footer{
