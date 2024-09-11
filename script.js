@@ -10,7 +10,7 @@ const technologybtn = document.getElementById("technologybtn");
 
 async function fecthrandomnews() {
     try {
-        const apiurl = `http://newsapi.org/v2/top-headlines?sources=bbc-news&pageSize=10&apiKey=${apikey}`;
+        const apiurl = `https://newsapi.org/v2/top-headlines?sources=bbc-news&pageSize=10&apiKey=${apikey}`;
         const response = await fetch(apiurl);
         const data = await response.json();
         console.log(data.articles)
