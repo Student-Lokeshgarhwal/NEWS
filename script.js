@@ -1,4 +1,4 @@
-const apikey = '35de15ee05d746b49c6ff25b204f62ba';
+const apikey = "35de15ee05d746b49c6ff25b204f62ba";
 
 const blogcontainer = document.getElementById('blog-container');
 const inputbox = document.getElementById('search-input');
@@ -10,7 +10,7 @@ const technologybtn = document.getElementById("technologybtn");
 
 async function fecthrandomnews() {
     try {
-        const apiurl = `https://newsapi.org/v2/top-headlines?sources=bbc-news&pageSize=10&apiKey=${apikey}`;
+        const apiurl = `http://newsapi.org/v2/top-headlines?sources=bbc-news&pageSize=10&apiKey=${apikey}`;
         const response = await fetch(apiurl);
         const data = await response.json();
         console.log(data.articles)
