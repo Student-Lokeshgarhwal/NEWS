@@ -13,6 +13,7 @@ async function fecthrandomnews() {
         const apiurl = `https://newsapi.org/v2/top-headlines?sources=bbc-news&pageSize=10&apiKey=${apikey}`;
         const response = await fetch(apiurl);
         const data = await response.json();
+        console.log(data.articles)
         return data.articles;
     } catch (error) {
         console.error("error fecthing random news", error);
@@ -38,7 +39,7 @@ function displayblogs(articles) {
         divcardbody.classList.add("card-body");
         const cardtitle = document.createElement("h2");
         cardtitle.classList.add("card-title");
-        const trucatedtitle = article.title.length > 30 ? article.title.slice(0, 30) + "...." : article.title;
+        const trucatedtitle = article.title.length > 40 ? article.title.slice(0, 35) + "...." : article.title;
         cardtitle.textContent = trucatedtitle;
         const cardtext = document.createElement("p");
         cardtext.classList.add("card-text");
@@ -129,14 +130,4 @@ technologybtn.addEventListener(("click"), async () => {
         console.error("error fecthing random news", error);
     }
 })();
-
-
-
-
-
-
-
-
-
-
 
